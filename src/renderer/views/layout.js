@@ -31,13 +31,13 @@ class Layout extends Component {
     };
   }
 
-  globalSearch = (event) => {
+  globalSearch(event) {
     event.preventDefault();
     event.stopPropagation();
     hashHistory.push({ pathname: '/notes', query: {searchFileText: this.state.searchFileText, available: true}});
   }
 
-  changeSearchFileText = (event) => {
+  changeSearchFileText(event) {
     this.setState({
       searchFileText: event.target.value
     });
@@ -51,7 +51,7 @@ class Layout extends Component {
     }
   }
 
-  componentDidMount = () => {
+  componentDidMount() {
     setupIpc();
     // 配些全局的相应appmenu的event
     setDispatchHandler('newNoteBook', () => {
