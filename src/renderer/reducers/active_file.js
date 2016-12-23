@@ -1,7 +1,7 @@
-import constants from '../../constants';
+import types from '../action_types';
 let {
     ACTIVE_FILE
-} = constants;
+} = types;
 
 export default function(state = {}, action) {
     switch (action.type) {

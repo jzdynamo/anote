@@ -7,7 +7,7 @@ import histories from './histories';
 import files from './files';
 import activeFile from './active_file';
 import globalBook from './global_book';
-import editorState from './editor_state'
+import editorState from './editor_state';
 
 const reducers = combineReducers({
   books,

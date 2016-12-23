@@ -1,4 +1,4 @@
-import constants from '../constants';
+import types from './action_types';
 let {
     LIST_BOOKS,
     ADD_BOOK,
@@ -16,7 +16,7 @@ let {
     ACTIVE_FILE,
     SET_GLOBAL_BOOK,
     SET_EDITOR_STATE
-} = constants;
+} = types;
 
 /* book actions */
 export function addBook(book) {

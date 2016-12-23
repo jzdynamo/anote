@@ -1,12 +1,12 @@
-import constants from '../../constants';
+import types from '../action_types';
 import {
     findIndexById
-} from '../../util'
+} from '../../utils/foundation';
 let {
     LIST_FILES,
     ADD_FILE,
     DEL_FILE,
-    EDIT_FILE, CONCAT_FILES } = constants;
+    EDIT_FILE, CONCAT_FILES } = types;
 
 export default function (state=[], action) {
   switch (action.type) {

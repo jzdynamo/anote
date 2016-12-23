@@ -210,12 +210,6 @@ const throttle = function(func, wait, options) {
     return throttled;
 };
 
-const findIndexById = (list, item) => {
-    return list.findIndex((currentItem) => {
-        return currentItem._id == item._id;
-    })
-}
-
 const pick = (o, ...props) => {
   return Object.assign({}, ...props.map((prop) => {return {[prop]: o[prop]};}))
 }

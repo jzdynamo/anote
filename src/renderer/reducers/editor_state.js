@@ -1,5 +1,5 @@
-import constants from '../../constants';
-let { SET_EDITOR_STATE } = constants;
+import types from '../action_types';
+let { SET_EDITOR_STATE } = types;
 
 export default function (state=0, action) {
   switch (action.type) {

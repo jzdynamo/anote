@@ -1,14 +1,14 @@
-import constants from '../../constants';
+import types from '../action_types';
 import {
     findIndexById
-} from '../../util'
+} from '../../utils/foundation';
 let {
     LIST_BOOKS,
     ADD_BOOK,
     DEL_BOOK,
     EDIT_BOOK,
     CONCAT_BOOKS
-} = constants;
+} = types;
 
 export default function (state=[], action) {
   switch (action.type) {
